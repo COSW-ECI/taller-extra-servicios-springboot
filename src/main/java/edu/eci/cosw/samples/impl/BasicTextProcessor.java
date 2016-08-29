@@ -16,17 +16,15 @@
  */
 package edu.eci.cosw.samples.impl;
 
-import edu.eci.cosw.samples.TextProcessor;
 import org.springframework.stereotype.Service;
 
 /**
  *
  * @author hcadavid
  */
-@Service
-public class BasicTextProcessor implements TextProcessor{
 
-    @Override
+public class BasicTextProcessor {
+
     public String processText(String tx) {
         return tx.toUpperCase();
     }

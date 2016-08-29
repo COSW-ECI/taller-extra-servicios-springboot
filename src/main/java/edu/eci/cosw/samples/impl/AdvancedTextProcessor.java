@@ -16,7 +16,6 @@
  */
 package edu.eci.cosw.samples.impl;
 
-import edu.eci.cosw.samples.TextProcessor;
 import org.springframework.stereotype.Service;
 
 /**
@@ -24,9 +23,9 @@ import org.springframework.stereotype.Service;
  * @author hcadavid
  */
 
-public class AdvancedTextProcessor implements TextProcessor{
+public class AdvancedTextProcessor {
 
-    @Override
+    
     public String processText(String tx) {
         return tx.toLowerCase().replaceAll("a", "_");
     }
